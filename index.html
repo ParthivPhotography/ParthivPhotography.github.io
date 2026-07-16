@@ -1,16 +1,182 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Parthiv Photography</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+letter-spacing:2px;
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:17px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+url("cover.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:35px;
+}
+
+.button{
+display:inline-block;
+padding:16px 40px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.button:hover{
+background:white;
+transform:scale(1.05);
+}
+
+</style>
+
 </head>
 
 <body>
 
+<nav>
+
+<div class="logo">
+Parthiv Photography
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
 <h1>Parthiv Photography</h1>
-<p>Luxury Wedding & Portrait Photographer</p>
+
+<p>Capturing Stories Through My Lens</p>
+
+<a href="#portfolio" class="button">
+View Portfolio
+</a>
+
+</div>
+
+</section>
 
 </body>
-</html>
+</html><section id="about" style="background:#111;padding:100px 20px;text-align:center;">
+
+<h2 style="font-size:42px;color:#d4af37;margin-bottom:30px;">
+About Me
+</h2>
+
+<img src="profile.jpg"
+style="width:220px;height:220px;border-radius:50%;object-fit:cover;border:5px solid #d4af37;">
+
+<p style="max-width:750px;margin:35px auto;font-size:20px;line-height:1.8;color:#ddd;">
+
+Hi, I'm <b>Parthiv</b>, a passionate photographer from Kerala.
+
+I specialize in weddings, portraits, travel and cinematic storytelling.
+
+Every photograph I create is crafted to preserve emotions, beauty and unforgettable memories.
+
+</p>
+
+</section>
+
+
+<section id="portfolio" style="background:#000;padding:100px 20px;text-align:center;">
+
+<h2 style="font-size:42px;color:#d4af37;margin-bottom:40px;">
+My Portfolio
+</h2>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+
+<img src="photo1.jpg" style="width:320px;border-radius:15px;">
+<img src="photo2.jpg" style="width:320px;border-radius:15px;">
+<img src="photo3.jpg" style="width:320px;border-radius:15px;">
+<img src="photo4.jpg" style="width:320px;border-radius:15px;">
+<img src="photo5.jpg" style="width:320px;border-radius:15px;">
+<img src="photo6.jpg" style="width:320px;border-radius:15px;">
+
+</div>
+
+</section>
